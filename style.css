@@ -1,0 +1,656 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* ----------------------HEADER----------------------- */
+
+
+
+.bg-light {
+    padding: 0;
+    width: 100%;
+}
+.containerLogoCodo{
+    display: flex;
+    color: white;
+    align-items: center;
+}
+.navbar-toggler{
+    background-color: white;
+}
+
+.containerLogoCodo p{
+    padding-top: 20px;
+}
+
+.containerLogoCodo img{
+    width: auto;
+    height: 70px;
+}
+
+.navbar .container-fluid{
+    background-color: #212529;
+    padding-left: auto;
+    font-weight: 500;
+    font-size: 17px;
+    justify-content: space-around;
+}
+
+.navbar-brand .logoNav--Custom {
+    width: auto;
+    height: 90px;
+    padding: 0;
+}
+
+.navbar-nav li {
+    padding: 0 10px;
+}
+
+.navbar-collapse{
+    flex-grow: 0;
+}
+
+.nav-link{
+    color: white;
+    opacity: 0.5;
+    transition: all .5s ease;
+}
+
+.nav-link:hover{
+    opacity: 1;
+    color: white;
+}
+
+.nav-item:last-child a{
+    color: rgb(47, 203, 47);
+}
+
+
+
+
+
+
+/* ----------------------MAIN--------------------------------- */
+
+.logo {
+    filter: drop-shadow(1px 1px 1px rgb(67, 66, 66))
+}
+
+.bannerPrincipal {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: end;
+    background: url("./assets/ba1.jpg"), rgba(0, 0, 0, 0.662);
+    background-blend-mode: color;
+    height: 80vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    text-align: end;
+    padding: 0% 11% 10% 40vw;
+}
+
+.bannerPrincipal>h1 {
+    margin-bottom: 10px;
+    font-size: 38px;
+}
+
+.bannerPrincipal>div>button {
+    padding: 10px 20px;
+    font-size: 18px;
+    margin-top: 15px;
+}
+
+
+.button1 {
+    background: transparent;
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all .4s ease;
+}
+
+.button1:hover {
+    color: black;
+    background-color: white;
+}
+
+.button2 {
+    background-color: #1a935a;
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    opacity: 0.8;
+    cursor: pointer;
+    transition: all .4s ease;
+}
+
+.button2:hover {
+    opacity: 1;
+    background-color: #21af6d;
+
+}
+
+/* ---------------------CARDS----------------------- */
+
+.titleCards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 0;
+
+}
+
+.titleCards>div:first-child {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.titleCards>div:last-child {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 28px;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.card {
+    display: flex;
+    width: 300px;
+    height: auto;
+    border: 1px solid rgba(220, 220, 220, 0.911);
+}
+
+.card__image {
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 15px;
+}
+
+.imgA {
+    background-image: url("./assets/steve.jpg");
+
+}
+
+.imgB {
+    background-image: url("./assets/bill.jpg");
+}
+
+.imgC {
+    background-image: url("./assets/ada.jpeg");
+}
+
+.card__text {
+    margin: 0 5px 10px 5px;
+}
+
+.card__text--subtitleA {
+    background-color: rgb(255, 255, 0);
+    font-size: small;
+    font-weight: bold;
+    border-radius: 3px;
+    padding: 2px 6px;
+}
+
+.card__text--subtitleB {
+    background-color: rgb(91, 192, 222);
+    color: white;
+    font-size: small;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 3px 10px;
+}
+
+.card__text--subtitleC {
+    background-color: grey;
+    color: white;
+    font-size: small;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 3px 10px;
+}
+
+.card__text--subtitleD {
+    background-color: rgb(203, 32, 32);
+    color: white;
+    font-size: small;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 3px 10px;
+}
+
+
+.card__text--title {
+    margin: 10px 0;
+}
+
+.card__text--description {
+    font-size: 14px;
+}
+
+
+
+/* -------------------------Oratoria------------------ */
+.lugarOratoria{
+    max-width: 100vw;
+    width: auto;
+    height: fit-content;
+    display: flex;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.img-Honolulu{
+    width: 50vw;
+    height: auto;
+}
+
+
+.lugarOratoria__description{
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    background-color: #212529;
+    color: white;
+    padding: 10px;
+}
+
+.lugarOratoria__description p{
+    font-size: 16px;
+    line-height: 25px;
+}
+
+.btn--Oratoria{
+    font-size: 15px;
+    background: transparent;
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all .4s ease;
+    width: fit-content;
+    height: fit-content;
+    padding: 5px;
+}
+
+.btn--Oratoria:hover {
+    color: black;
+    background-color: white;
+}
+
+
+
+/*-----------------FORMULARIO----------------- */
+.container-Form{
+    max-width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 50%;
+}
+
+input{
+    width: max-content;
+    padding: 2px;
+    margin: 5px 5px 0 5px;
+}
+
+.container-Form>div{
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 18px;
+    padding-top: 20px;
+}
+
+.container-Form p {
+    margin-bottom:  0;
+}
+
+.form-NameLastName{
+    width: min-content;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+textarea{
+    resize: none;
+    width: 100%;
+    padding: 3px 0 0 10px;
+}
+
+.form-TextArea{
+    margin-top: 20px;
+    width: 100%;
+}
+
+.btn-Form {
+    background-color: rgb(59, 207, 59);
+    width: 100%;
+    padding: 4px;
+    margin-bottom: 10px;
+    font-size: 17px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10vh;
+}
+
+
+
+
+/* -----------------------------TICKETS------------------------ */
+
+.cards-Tickets-Container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+.tickets{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    gap: 8px;
+}
+
+
+
+.tickets p:last-child{
+    color: grey;
+}
+
+
+
+.ticket{
+    padding: 10px;
+}
+
+.student{
+    border: solid 1px rgb(73, 73, 201);
+}
+
+.trainee{
+    border: solid 1px rgb(87, 140, 231);
+}
+
+.junior{
+    border: solid 1px rgb(255, 255, 0);
+}
+
+
+.formTickets-Container{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 75%; /*Determina el tamaño maximo que puede tener el contenedor*/
+    width: 100%; 
+}
+
+.form-Tickets{
+    max-width: 70%;
+    width: 58%;
+}
+
+.form-Tickets>div{
+    max-width: 100%;
+    width: 100%;
+}
+
+
+
+.form-Tickets-Names{
+    display: flex;
+    justify-content:space-between ;
+}
+
+.form-Tickets-Names>div{
+    width: 20.3rem;
+}
+
+.input-Tickets{
+    width: 100%;
+    margin: 0;
+    padding: 10px;
+    border-radius: 5px;
+    border: solid 1px rgb(124, 118, 118);
+}
+
+.form-Tickets-Email{
+    margin-bottom: 10px;
+}
+
+
+.form-Tickets-Category{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.form-Tickets-Category>div{
+    width:100% ;
+}
+
+.category{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+label{
+    margin-bottom: 10px;
+}
+
+select{
+    background: transparent;
+    height: max-content;
+    border-radius: 5px;
+    border: solid 1px rgb(124, 118, 118);
+    padding: 10px;
+}
+
+/* ----------------------PAGOS--------------------------- */
+.form-Payment{
+    width: 100%;
+    background-color: hsl(180, 53%, 85%);
+    color:hsl(198, 62%, 27%) ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin: 10px 0;
+    border: solid 1px transparent;
+    border-radius: 5px;
+}
+
+.form-btns{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.p-modal{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    font-size: 20px;
+    
+}
+
+.span-modal{
+    margin-left: 50px;
+    font-family:'Roboto', sans-serif ;
+    
+}
+
+
+
+.form-btns>button{
+    width: 49%;
+    background-color: rgb(59, 207, 59);
+    padding: 4px;
+    font-size: 17px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+
+.messageError{
+    color: red;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    font-size: 16px;
+}
+
+
+
+
+/* --------------------------Footer --------------------------*/
+footer {
+    background: linear-gradient(90deg, rgba(2, 0, 36, 0.9682247899159664) 0%, rgb(3, 64, 95) 36%, rgb(2, 74, 102) 100%);
+
+}
+
+footer>ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+    padding: 10px;
+    align-items: center;
+    margin-bottom: 0;
+}
+
+footer>ul>li {
+    width: 10%;
+    text-align: center;
+}
+
+footer>ul>li>a {
+    text-decoration: none;
+    color: white;
+    font-family: roboto, sans-serif;
+    font-size: 15px;
+}
+
+/* --------------------------Media queries-------------------------- */
+
+@media (max-width: 480px) {
+
+
+    .bannerPrincipal {
+        padding: 0;
+        text-align: center;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+    }
+
+    .bannerPrincipal>h1 {
+        margin-bottom: 10px;
+        font-size: 32px;
+    }
+
+    .bannerPrincipal>div>button {
+        padding: 8px 10px;
+        font-size: 16px;
+        margin-top: 12px;
+    }
+
+    .lugarOratoria{
+        flex-direction: column;
+
+    }
+
+    .img-Honolulu{
+        width: 100vw;
+    }
+
+    .lugarOratoria__description{
+        width: 100vw;
+    }
+
+    .form-NameLastName{
+        display: inline;
+    }
+
+    .form-TextArea{
+        width: max-content;
+    }
+
+    .btn-Form{
+        margin: 10px 0;
+    }
+
+    .container-Form div{
+        text-align: center;
+    }
+    
+    .formTickets-Container{
+        max-width: 100%;
+    }
+
+    .form-Tickets{
+        max-width: 90%;
+        width: 100%;
+    }
+
+
+    footer ul{
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 100vw;
+    }
+
+    footer ul li{
+        padding: 10px 0px;
+        width: auto;
+    }
+}
+
+
+
+
+
+@media (max-width: 768px) {
+
+    .navbar .container-fluid {
+        justify-content: space-between;
+    }
+    .bannerPrincipal {
+        padding: 0;
+        align-content: center;
+        justify-content: center;
+    }
+}
